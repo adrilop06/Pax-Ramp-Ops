@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.div_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0277BD;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.31);
+}
+
+.div_container-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1vw;
+    margin-top: 10px;
+}
+
+.div_container-superior p{
+    font-size: 25px;
+}
+
+#STD{
+    font-size: 15px;
+    margin-right: -30px;
+    align-self: end;
+    margin-bottom: 3px;
+}
+
+.div_container-inferior_board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 9px;
+}
+
+.div_container-inferior_fact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 55px;
+}
+
+.ckin_container_abre h5 {
+    color: #61ff69;
+    font-size: 15px;
+}
+
+.ckin_container_abre p {
+    align-self: flex-start;
+    font-size: 2rem;
+}
+
+.ckin_container_cierra p {
+    align-self: flex-end;
+    font-size: 2rem;
+}
+
+.ckin_container_cierra h5 {
+    color: #f1c933;
+    font-size: 15px;
+}
+
+.ckin_container_abre {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: self-start;
+    gap: -15px;
+}
+
+.ckin_container_cierra {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: self-end;
+    gap: -15px;
+}
+
+.container_board h5 {
+    color: rgb(0, 43, 161);
+    font-size: 15px;
+}
+
+.container_board p {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+.container_board {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    gap: -15px;
+}
+
+.button_open {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffe6;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button_open_orange{
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffb300;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button_open_yellow{
+    align-items: center;
+    justify-content: space-around;
+    background-color: #82b3c9;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button_open_green{
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9ccc65;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button_open_red {
+    align-items: center;
+    background-color: #a30707;
+    justify-content: space-between;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button_open-flight_visible{
+    visibility: visible;
+}
+
+.button_open-flight_hidden{
+    visibility: hidden;
+}
+
+
+.a_button-visible {
+    visibility: visible;
+    margin-top: -1.2vh;
+}
+
+.a_button-hidden {
+    visibility: hidden;
+    margin-top: -1.2vh;
+}
+
+.cancel_hidden{
+    visibility: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: inherit;
+    height: 4vh;
+    width: 30vw;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.cancel_visible{
+    visibility: visible;
+    background-color: #d32f2f;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: inherit;
+
+    
+    height: 4vh;
+    width: 30vw;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+#button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: inherit;
+    height: 4vh;
+    width: 30vw;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+#button_cancel{
+    visibility: hidden;
+
+}
+
+.p_flightClosed{
+    color: rgba(0, 0, 0, .57);
+    font-size: medium;
+    margin-bottom: 5px;
+}

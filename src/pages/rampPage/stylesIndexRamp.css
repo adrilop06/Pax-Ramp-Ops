@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background: url(../img/logotransp.png) no-repeat right;
+    background-size: 25%;
+    background-color: #004ba0;
+    background-position-x: 73vw;
+    height: 123px;
+    padding: 20px;
+}
+
+.p_fl {
+    font-size: 2rem;
+}
+
+
+.div_header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#reloj {
+    font-size: 15px;
+    color: #e5e22e;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#STD {
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: brown;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* padding: 1px; */
+    padding-left: 4px;
+    padding-right: 5px;
+}
+
+
+
+.div_header-data {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: -10px;
+    font-size: larger;
+    align-items: baseline;
+}
+
+body {
+    background-color: #0277bd;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.ramp_p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #e5e22e;
+    margin-top: -5px;
+}
+
+input {
+    margin-top: 20px;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2px;
+    border: solid 0.5px #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20PX;
+}
+
+button {
+    margin-top: 20px;
+    align-self: center;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #e5e22e;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #e5e22e;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* -------------------------- ESTO ES MODAL ------------------*/
+
+.modal {
+    visibility: hidden;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal,
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+.modal,
+.modal-card,
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-body {
+    z-index: 101;
+    margin: auto;
+    max-height: calc(100vh - 1rem);
+    max-width: calc(100vw - 1rem);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    height: 200px;
+    background: white;
+}
+
+.modal-content {
+    flex-grow: 2;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.modal-content.OK {
+    overflow: hidden;
+    flex-grow: 2;
+    margin-top: 4px;
+    color: rgb(85, 219, 8);
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.modal-content.NOTOK {
+    overflow: hidden;
+    flex-grow: 2;
+    margin-top: 4px;
+    color: rgb(219, 22, 8);
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.modal-footer.OK {
+    display: flex;
+    color: #0054f1;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.modal-footer.NOT {
+    display: flex;
+    color: #f10000;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.modal-header {
+    padding: 1rem;
+    background: #004ba0;
+    /* text-transform: capitalize; */
+    font-size: 1.25rem;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+
+}
+
+.modal-footer {
+    display: flex;
+    color: #000000;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: -10px;
+    align-self: center;
+}
+
+#close {
+    color: #ffffff;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    background-color: #004ba0;
+}

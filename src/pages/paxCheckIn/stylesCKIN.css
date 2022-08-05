@@ -1,0 +1,11 @@
+.ckin_form_style{
+    padding-top: 100px;
+    height: 100vh;
+    background-color: #073590;
+}
+
+.ckin_form_style input {
+    text-align: end;
+    padding-right: 10px;
+
+}

@@ -1,0 +1,9 @@
+.div_footer_container {
+    margin-left: 1vw;
+}
+
+.div_footer_container p{
+    color: white;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

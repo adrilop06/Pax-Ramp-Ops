@@ -1,0 +1,31 @@
+.form_styles {
+    padding-top: 100px;
+    height: 100vh;
+    background-color: #073289;
+
+}
+
+
+.form_styles input {
+    text-align: end;
+    padding-right: 10px;
+
+}
+
+.children_input {
+    padding-right: 20px;
+}
+
+.div_tob {
+    min-width: 60px;
+    max-width: 150px;
+    margin-left: 30vw;
+}
+
+.div_special {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
